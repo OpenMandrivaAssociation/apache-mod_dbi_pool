@@ -22,7 +22,6 @@ Requires:	apache >= 2.2.0
 BuildRequires:	apache-devel >= 2.2.0
 BuildRequires:	file
 BuildRequires:	libdbi-devel >= 0.8.1
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 mod_dbi_pool provides database connection pooling services for other Apache
