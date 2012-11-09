@@ -1,0 +1,24 @@
+diff -Naur mod_dbi_pool-0.4.0/src/Makefile.am mod_dbi_pool-0.4.0.oden/src/Makefile.am
+--- mod_dbi_pool-0.4.0/src/Makefile.am	2004-10-13 21:15:11.000000000 +0200
++++ mod_dbi_pool-0.4.0.oden/src/Makefile.am	2006-08-01 14:56:58.000000000 +0200
+@@ -2,7 +2,7 @@
+ 
+ libmod_dbi_pool_la_SOURCES = mod_dbi_pool.c
+ libmod_dbi_pool_la_CFLAGS = -Wall ${MODULE_CFLAGS} ${DBI_CFLAGS}
+-libmod_dbi_pool_la_LDFLAGS = ${DBI_LDFLAGS} ${DBI_LIBS}
++libmod_dbi_pool_la_LDFLAGS = ${DBI_LDFLAGS} ${DBI_LIBS} -module -avoid-version
+ 
+ lib_LTLIBRARIES = libmod_dbi_pool.la 
+ 
+diff -Naur mod_dbi_pool-0.4.0/src/Makefile.in mod_dbi_pool-0.4.0.oden/src/Makefile.in
+--- mod_dbi_pool-0.4.0/src/Makefile.in	2004-10-13 21:21:41.000000000 +0200
++++ mod_dbi_pool-0.4.0.oden/src/Makefile.in	2006-08-01 14:57:25.000000000 +0200
+@@ -196,7 +196,7 @@
+ CLEANFILES = .libs/libmod_dbi_pool *~
+ libmod_dbi_pool_la_SOURCES = mod_dbi_pool.c
+ libmod_dbi_pool_la_CFLAGS = -Wall ${MODULE_CFLAGS} ${DBI_CFLAGS}
+-libmod_dbi_pool_la_LDFLAGS = ${DBI_LDFLAGS} ${DBI_LIBS}
++libmod_dbi_pool_la_LDFLAGS = ${DBI_LDFLAGS} ${DBI_LIBS} -module -avoid-version
+ lib_LTLIBRARIES = libmod_dbi_pool.la 
+ all: all-am
+ 
