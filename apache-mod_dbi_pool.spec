@@ -9,7 +9,7 @@ Version:	0.4.0
 Release:	11
 Group:		System/Servers
 License:	GPL
-URL:		http://www.outoforder.cc/projects/apache/mod_dbi_pool/
+URL:		https://www.outoforder.cc/projects/apache/mod_dbi_pool/
 Source0:	http://www.outoforder.cc/downloads/mod_dbi_pool/%{mod_name}-%{version}.tar.bz2
 Source1:	%{mod_conf}.bz2
 Patch0:		mod_dbi_pool-0.4.0-module.diff
